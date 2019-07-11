@@ -1,0 +1,19 @@
+{
+  "categories": [
+    {
+      "_id": 1,
+      "name": "kermit",
+      "display_name": "the frog",
+      "description": "not easy being green"
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "category": "muppets",
+      "name": "bowie",
+      "display_name": "jareth",
+      "description": "goblin king"
+    }
+  ]
+}
