@@ -5,7 +5,7 @@
 ### Author: Ai 
 
 ### Links and Resources
-* [submission PR](http://xyz.com)
+* [submission PR](https://github.com/401-advanced-javascript-aimurphy/simple-api/pull/3)
 
 #### Documentation
 * [api docs](https://app.swaggerhub.com/apis/aimurphyii/lab6/0.1#/default/get_products_) (API servers)
@@ -34,4 +34,4 @@
 [click here to go there](https://app.swaggerhub.com/apis/aimurphyii/lab6/0.1#/default/get_products_)
 
 #### UML
-![]()
+![uml](https://github.com/401-advanced-javascript-aimurphy/simple-api/blob/master/img/IMG_7638.jpg?raw=true)
