@@ -1,52 +1,440 @@
 {
-  "openapi": "3.0.1",
-  "info": {
-    "title": "Core API",
-    "description": "The worlds funnest little API",
-    "version": "1.0.0"
+  "openapi" : "3.0.1",
+  "info" : {
+    "title" : "defaultTitle",
+    "description" : "defaultDescription",
+    "version" : "0.1"
   },
-  "servers": [
-    {
-      "url": "http://localhost:8080/"
-    }
-  ],
-  "paths": {
-    "/categories": {
-      "get": {
-        "description": "Get all categories",
-        "responses": {
-          "200": {
-            "description": "Returned a list of categories",
-            "content": {
-              "*/*": {
-                "schema": {
-                  "$ref": "#/components/schemas/getAll"
+  "servers" : [ {
+    "url" : "http://localhost:3000"
+  } ],
+  "paths" : {
+    "/products/" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "put" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "_id",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        }, {
+          "name" : "%3Aid",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\n        \"id\": 2,\n        \"category\": \"muppets\",\n        \"name\": \"piggie\",\n        \"display_name\": \"miss piggy\",\n        \"description\": \"boss b\"\n    }"
+                },
+                "1" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "2" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "3" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "4" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
                 }
               }
             }
           }
-        }
+        },
+        "responses" : {
+          "404" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
       },
-      "post": {
-      }
+      "post" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body_1"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\n        \"id\": 2,\n        \"category\": \"muppets\",\n        \"name\": \"piggie\",\n        \"display_name\": \"miss piggy\",\n        \"description\": \"boss b\"\n    }"
+                },
+                "1" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "2" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "3" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "4" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "delete" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "_id",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        }, {
+          "name" : "%3Aid",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        } ],
+        "responses" : {
+          "404" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "http://localhost:3000"
+      } ]
     },
-    "/categories/{id}": {
-      "get": {
+    "/categories/" : {
+      "get" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "responses" : {
+          "200" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
       },
-      "put": {
+      "put" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "_id",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        }, {
+          "name" : "%3Aid",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        } ],
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body_2"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookies\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon copilot\"\n    }"
+                },
+                "1" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "2" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "3" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "4" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "404" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
       },
-      "delete": {
-      }
+      "post" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "requestBody" : {
+          "content" : {
+            "application/json" : {
+              "schema" : {
+                "$ref" : "#/components/schemas/body_3"
+              },
+              "examples" : {
+                "0" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookies\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon copilot\"\n    }"
+                },
+                "1" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "2" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "3" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                },
+                "4" : {
+                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+                }
+              }
+            }
+          }
+        },
+        "responses" : {
+          "201" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "delete" : {
+        "description" : "Auto generated using Swagger Inspector",
+        "parameters" : [ {
+          "name" : "_id",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        }, {
+          "name" : "%3Aid",
+          "in" : "query",
+          "required" : false,
+          "style" : "form",
+          "explode" : true,
+          "schema" : {
+            "type" : "string"
+          },
+          "example" : "2"
+        } ],
+        "responses" : {
+          "404" : {
+            "description" : "Auto generated using Swagger Inspector",
+            "content" : {
+              "application/json; charset=utf-8" : {
+                "schema" : {
+                  "type" : "string"
+                },
+                "examples" : { }
+              }
+            }
+          }
+        },
+        "servers" : [ {
+          "url" : "http://localhost:3000"
+        } ]
+      },
+      "servers" : [ {
+        "url" : "http://localhost:3000"
+      } ]
     }
   },
-  "components": {
-    "schemas": {
-      "getAll": {
-        "type": "object",
-        "example": [
-          "{}",
-          "{}"
-        ]
+  "components" : {
+    "schemas" : {
+      "body" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer"
+          },
+          "category" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          }
+        }
+      },
+      "body_1" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer"
+          },
+          "category" : {
+            "type" : "string"
+          },
+          "display_name" : {
+            "type" : "string"
+          }
+        }
+      },
+      "body_2" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer"
+          },
+          "display_name" : {
+            "type" : "string"
+          }
+        }
+      },
+      "body_3" : {
+        "type" : "object",
+        "properties" : {
+          "name" : {
+            "type" : "string"
+          },
+          "description" : {
+            "type" : "string"
+          },
+          "id" : {
+            "type" : "integer"
+          },
+          "display_name" : {
+            "type" : "string"
+          }
+        }
       }
     }
   }

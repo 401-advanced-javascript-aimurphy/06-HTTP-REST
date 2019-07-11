@@ -1,0 +1,32 @@
+{
+  "categories": [
+    {
+      "_id": 1,
+      "name": "muppets",
+      "display_name": "the frog",
+      "description": "not easy being green"
+    },
+    {
+      "id": 2,
+      "name": "wookies",
+      "display_name": "chewie",
+      "description": "millenium falcon copilot"
+    }
+  ],
+  "products": [
+    {
+      "_id": 1,
+      "category": "muppets",
+      "name": "bowie",
+      "display_name": "jareth",
+      "description": "goblin king"
+    },
+    {
+      "id": 2,
+      "category": "muppets",
+      "name": "piggie",
+      "display_name": "miss piggy",
+      "description": "boss b"
+    }
+  ]
+}
