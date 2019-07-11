@@ -1,19 +1,19 @@
 {
-  "categories": [
+  "posts": [
     {
-      "_id": 1,
-      "name": "kermit",
-      "display_name": "the frog",
-      "description": "not easy being green"
+      "id": 1,
+      "title": "json-server",
+      "author": "typicode"
     }
   ],
-  "products": [
+  "comments": [
     {
-      "_id": 1,
-      "category": "muppets",
-      "name": "bowie",
-      "display_name": "jareth",
-      "description": "goblin king"
+      "id": 1,
+      "body": "some comment",
+      "postId": 1
     }
-  ]
+  ],
+  "profile": {
+    "name": "typicode"
+  }
 }
