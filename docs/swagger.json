@@ -1,439 +1,274 @@
 {
-  "openapi" : "3.0.1",
+  "swagger" : "2.0",
   "info" : {
-    "title" : "defaultTitle",
     "description" : "defaultDescription",
-    "version" : "0.1"
+    "version" : "0.1",
+    "title" : "defaultTitle"
   },
-  "servers" : [ {
-    "url" : "http://localhost:3000"
-  } ],
   "paths" : {
-    "/products/" : {
-      "get" : {
-        "description" : "Auto generated using Swagger Inspector",
+    "/products/2" : {
+      "delete" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/Model4"
+          },
+          "x-examples" : {
+            "application/json" : " {\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
+          }
+        } ],
         "responses" : {
           "200" : {
-            "description" : "Auto generated using Swagger Inspector",
-            "content" : {
-              "application/json; charset=utf-8" : {
-                "schema" : {
-                  "type" : "string"
-                },
-                "examples" : { }
-              }
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model7"
             }
           }
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
-      "put" : {
-        "description" : "Auto generated using Swagger Inspector",
-        "parameters" : [ {
-          "name" : "_id",
-          "in" : "query",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "type" : "string"
-          },
-          "example" : "2"
-        }, {
-          "name" : "%3Aid",
-          "in" : "query",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "type" : "string"
-          },
-          "example" : "2"
-        } ],
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/body"
-              },
-              "examples" : {
-                "0" : {
-                  "value" : "{\n        \"id\": 2,\n        \"category\": \"muppets\",\n        \"name\": \"piggie\",\n        \"display_name\": \"miss piggy\",\n        \"description\": \"boss b\"\n    }"
-                },
-                "1" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "2" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "3" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "4" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                }
-              }
-            }
-          }
-        },
-        "responses" : {
-          "404" : {
-            "description" : "Auto generated using Swagger Inspector",
-            "content" : {
-              "application/json; charset=utf-8" : {
-                "schema" : {
-                  "type" : "string"
-                },
-                "examples" : { }
-              }
-            }
-          }
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
-      "post" : {
-        "description" : "Auto generated using Swagger Inspector",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/body_1"
-              },
-              "examples" : {
-                "0" : {
-                  "value" : "{\n        \"id\": 2,\n        \"category\": \"muppets\",\n        \"name\": \"piggie\",\n        \"display_name\": \"miss piggy\",\n        \"description\": \"boss b\"\n    }"
-                },
-                "1" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "2" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "3" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "4" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                }
-              }
-            }
-          }
-        },
-        "responses" : {
-          "201" : {
-            "description" : "Auto generated using Swagger Inspector",
-            "content" : {
-              "application/json; charset=utf-8" : {
-                "schema" : {
-                  "type" : "string"
-                },
-                "examples" : { }
-              }
-            }
-          }
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
-      "delete" : {
-        "description" : "Auto generated using Swagger Inspector",
-        "parameters" : [ {
-          "name" : "_id",
-          "in" : "query",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "type" : "string"
-          },
-          "example" : "2"
-        }, {
-          "name" : "%3Aid",
-          "in" : "query",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "type" : "string"
-          },
-          "example" : "2"
-        } ],
-        "responses" : {
-          "404" : {
-            "description" : "Auto generated using Swagger Inspector",
-            "content" : {
-              "application/json; charset=utf-8" : {
-                "schema" : {
-                  "type" : "string"
-                },
-                "examples" : { }
-              }
-            }
-          }
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
-      "servers" : [ {
-        "url" : "http://localhost:3000"
-      } ]
+        }
+      }
     },
-    "/categories/" : {
-      "get" : {
-        "description" : "Auto generated using Swagger Inspector",
+    "/categories/2" : {
+      "delete" : {
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ ],
         "responses" : {
           "200" : {
-            "description" : "Auto generated using Swagger Inspector",
-            "content" : {
-              "application/json; charset=utf-8" : {
-                "schema" : {
-                  "type" : "string"
-                },
-                "examples" : { }
-              }
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model11"
             }
           }
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
+        }
+      }
+    },
+    "/{param0}/2" : {
       "put" : {
-        "description" : "Auto generated using Swagger Inspector",
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_id",
-          "in" : "query",
+          "in" : "body",
+          "name" : "body",
           "required" : false,
-          "style" : "form",
-          "explode" : true,
           "schema" : {
-            "type" : "string"
+            "$ref" : "#/definitions/Model2"
           },
-          "example" : "2"
+          "x-examples" : {
+            "application/json" : "    {  \"id\": 2,\n        \"category\": \"muppets\",\n        \"name\": \"piggie\",\n        \"display_name\": \"miss piggy\",\n        \"description\": \"boss babe\"\n    }"
+          }
         }, {
-          "name" : "%3Aid",
-          "in" : "query",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "type" : "string"
-          },
-          "example" : "2"
+          "name" : "param0",
+          "in" : "path",
+          "description" : "Example values form path are: 'products' and 'categories'",
+          "required" : true,
+          "type" : "string"
         } ],
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/body_2"
-              },
-              "examples" : {
-                "0" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookies\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon copilot\"\n    }"
-                },
-                "1" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "2" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "3" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "4" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                }
-              }
-            }
-          }
-        },
         "responses" : {
-          "404" : {
-            "description" : "Auto generated using Swagger Inspector",
-            "content" : {
-              "application/json; charset=utf-8" : {
-                "schema" : {
-                  "type" : "string"
-                },
-                "examples" : { }
-              }
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model5"
             }
           }
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
+        }
+      }
+    },
+    "/{param1}" : {
       "post" : {
-        "description" : "Auto generated using Swagger Inspector",
-        "requestBody" : {
-          "content" : {
-            "application/json" : {
-              "schema" : {
-                "$ref" : "#/components/schemas/body_3"
-              },
-              "examples" : {
-                "0" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookies\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon copilot\"\n    }"
-                },
-                "1" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "2" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "3" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                },
-                "4" : {
-                  "value" : "{\n      \"id\": 2,\n      \"name\": \"wookie\",\n      \"display_name\": \"chewie\",\n      \"description\": \"millenium falcon pilot\"\n    }"
-                }
-              }
-            }
+        "consumes" : [ "application/json" ],
+        "produces" : [ "application/json" ],
+        "parameters" : [ {
+          "in" : "body",
+          "name" : "body",
+          "required" : false,
+          "schema" : {
+            "$ref" : "#/definitions/Model3"
+          },
+          "x-examples" : {
+            "application/json" : "    {  \"id\": 2,\n        \"category\": \"muppets\",\n        \"name\": \"piggie\",\n        \"display_name\": \"miss piggy\",\n        \"description\": \"boss b\"\n    }"
           }
-        },
+        }, {
+          "name" : "param1",
+          "in" : "path",
+          "description" : "Example values form path are: 'products' and 'categories'",
+          "required" : true,
+          "type" : "string"
+        } ],
         "responses" : {
           "201" : {
-            "description" : "Auto generated using Swagger Inspector",
-            "content" : {
-              "application/json; charset=utf-8" : {
-                "schema" : {
-                  "type" : "string"
-                },
-                "examples" : { }
-              }
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model6"
             }
           }
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
-      "delete" : {
-        "description" : "Auto generated using Swagger Inspector",
+        }
+      }
+    },
+    "/{param2}" : {
+      "get" : {
+        "produces" : [ "application/json" ],
         "parameters" : [ {
-          "name" : "_id",
-          "in" : "query",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "type" : "string"
-          },
-          "example" : "2"
-        }, {
-          "name" : "%3Aid",
-          "in" : "query",
-          "required" : false,
-          "style" : "form",
-          "explode" : true,
-          "schema" : {
-            "type" : "string"
-          },
-          "example" : "2"
+          "name" : "param2",
+          "in" : "path",
+          "description" : "Example values form path are: 'products' and 'categories'",
+          "required" : true,
+          "type" : "string"
         } ],
         "responses" : {
-          "404" : {
-            "description" : "Auto generated using Swagger Inspector",
-            "content" : {
-              "application/json; charset=utf-8" : {
-                "schema" : {
-                  "type" : "string"
-                },
-                "examples" : { }
-              }
+          "200" : {
+            "description" : "Definition generated from Swagger Inspector",
+            "schema" : {
+              "$ref" : "#/definitions/Model8"
             }
           }
-        },
-        "servers" : [ {
-          "url" : "http://localhost:3000"
-        } ]
-      },
-      "servers" : [ {
-        "url" : "http://localhost:3000"
-      } ]
+        }
+      }
     }
   },
-  "components" : {
-    "schemas" : {
-      "body" : {
-        "type" : "object",
-        "properties" : {
-          "name" : {
-            "type" : "string"
-          },
-          "description" : {
-            "type" : "string"
-          },
-          "id" : {
-            "type" : "integer"
-          },
-          "category" : {
-            "type" : "string"
-          },
-          "display_name" : {
-            "type" : "string"
-          }
+  "definitions" : {
+    "Model3" : {
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
         }
-      },
-      "body_1" : {
-        "type" : "object",
-        "properties" : {
-          "name" : {
-            "type" : "string"
-          },
-          "description" : {
-            "type" : "string"
-          },
-          "id" : {
-            "type" : "integer"
-          },
-          "category" : {
-            "type" : "string"
-          },
-          "display_name" : {
-            "type" : "string"
-          }
+      }
+    },
+    "Model2" : {
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
         }
-      },
-      "body_2" : {
-        "type" : "object",
-        "properties" : {
-          "name" : {
-            "type" : "string"
-          },
-          "description" : {
-            "type" : "string"
-          },
-          "id" : {
-            "type" : "integer"
-          },
-          "display_name" : {
-            "type" : "string"
-          }
+      }
+    },
+    "Model4" : {
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
         }
-      },
-      "body_3" : {
-        "type" : "object",
-        "properties" : {
-          "name" : {
-            "type" : "string"
-          },
-          "description" : {
-            "type" : "string"
-          },
-          "id" : {
-            "type" : "integer"
-          },
-          "display_name" : {
-            "type" : "string"
-          }
+      }
+    },
+    "Model5" : {
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Model6" : {
+      "properties" : {
+        "id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Model7" : { },
+    "Array" : {
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "category" : {
+          "type" : "string"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
+        }
+      }
+    },
+    "Model8" : {
+      "type" : "array",
+      "items" : {
+        "$ref" : "#/definitions/Array"
+      }
+    },
+    "Model11" : { },
+    "Model12_Array" : {
+      "properties" : {
+        "_id" : {
+          "type" : "integer",
+          "format" : "int32"
+        },
+        "name" : {
+          "type" : "string"
+        },
+        "display_name" : {
+          "type" : "string"
+        },
+        "description" : {
+          "type" : "string"
         }
       }
     }
